@@ -1,0 +1,55 @@
+{
+    "packages": {
+        "advanced-custom-fields/advanced-custom-fields-pro": {
+            "5.10.2": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.10.2",
+                "version_normalized": "5.10.2.0",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%WP_PLUGIN_ACF_KEY}&t={%VERSION}"
+                },
+                "require": {
+                    "composer/installers": "^2.0",
+                    "ffraenz/private-composer-installer": "^5.0"
+                },
+                "type": "wordpress-plugin"
+            }
+        },
+        "successagency/core-plugin": {
+            "dev-main": {
+                "name": "successagency/core-plugin",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:successagency/core-plugin.git",
+                    "reference": "93a8168c3db0be03ed63ff938977dc6ba1c2b406"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/successagency/core-plugin/zipball/93a8168c3db0be03ed63ff938977dc6ba1c2b406",
+                    "reference": "93a8168c3db0be03ed63ff938977dc6ba1c2b406",
+                    "shasum": ""
+                },
+                "require": {
+                    "filp/whoops": "^2.14",
+                    "mustache/mustache": "^2.5",
+                    "php-di/php-di": "6.0.*"
+                },
+                "time": "2021-11-29T19:39:09+00:00",
+                "type": "wordpress-muplugin",
+                "autoload": {
+                    "psr-4": {
+                        "Escale\\Core\\": "src"
+                    }
+                },
+                "description": "E*SCALE's Core Plugin for customizing Wordpress Projects",
+                "support": {
+                    "source": "https://github.com/successagency/core-plugin/tree/main",
+                    "issues": "https://github.com/successagency/core-plugin/issues"
+                }
+            }
+        }
+    }
+}
